@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Datos de Pago</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1 class="col align-self-center g-2 pt-2 pb-2 align-middle ">Datos a complementar</h1>
+        </div>
+
+        <form>
+            <div class="row justify-content-center pb-2">
+                <input type="text" class="form-control bg-danger text-light" id="MensajeError"
+                    placeholder="Es obligatorio rellenar lo datos">
+            </div>
+
+            <div class="row g-1 pt-2 pb-2 sticky-top col-md-5">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+                </div>
+            </div>
+
+            <div class="row g-1 pt-2 pb-2 col-7">
+
+                <div class="form-group pt-2 pb-2 sticky-top col-4">
+                    <label for="exampleInputEmail1">Direccion Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="ejemplo@mail.net">
+                    <small id="emailHelp" class="form-text text-muted">·Email necesario para continuar</small>
+                </div>
+                <div class="form-group pt-2 pb-2 sticky-top col-4">
+                    <label for="exampleInputPassword1">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <small id="password" class="form-text text-muted">·Contraseña necesaria para continuar</small>
+                </div>
+                <div class="form-group pt-2 pb-2 sticky-top col-4">
+                    <label for="Inputtelefono">Telefono</label>
+                    <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="987654321">
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-4 ">
+
+
+                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Calle 123">
+                </div>
+
+                <div class="col-4 ">
+                    <label for="inputState" class="form-label">Pais</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>España</option>
+                        <option>Alemania</option>
+                        <option>Argentina</option>
+                        <option>Ecuador</option>
+                        <option>Marruecos</option>
+                        <option>Mexico</option>
+                        <option>Portugal</option>
+                        <option>Rumania</option>
+
+                    </select>
+                </div>
+
+                <div class="col-md-4 ">
+                    <label for="inputCity" class="form-label">Cuidad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+
+
+            </div>
+
+            <div class="row pb-2 pt-3">
+
+                <div class="col-4">
+
+
+                    <label for="inputAddress" class="form-label">Targeta de crédito/debito</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="XXXXXXXXXXXXXXXXXXXXX">
+                </div>
+
+                <div class="col-4 ">
+                    <label for="inputCVC" class="form-label">CVC</label>
+                    <input type="text" class="form-control" id="inputCVC" placeholder="XXX">
+                </div>
+                <div class="col-4 ">
+                    <div class="form-floating"></div>
+                    <label for="floatingTextarea">Encuesta de Pago</label>
+                    <textarea class="form-control" placeholder="Crear comentario aquí" id="floatingTextarea"></textarea>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <h2 class="pt-2 pb-2">Selección de pago</h2>
+                <div class="col-3 bg-dark justify-content-center">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option4">
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off"
+                    checked>
+                <label class="btn btn-outline-secondary" for="success-outlined">Aceptar</label>
+
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                <label class="btn btn-outline-danger" for="danger-outlined">Cancelar</label>
+
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+
+
+</body>
+
+</html>
